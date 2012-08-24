@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*******************************************************************************/
+/* page wide css */
+
+html {
+	font-family: 'Quattrocento', serif;
+}
+
+::selection {
+	background: #4DEF87; /* Safari */
+	}
+::-moz-selection {
+	background: #4DEF87; /* Firefox */
+}
+
+
+/* wrapper */
+
+.wrapper {
+	width: 800px;
+	margin-left: 0;
+}
+
+
+/* sidebar */
+
+.sidebar {
+	width: 160px;
+	float: left;
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+.sidebar h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #474747;
+	margin-left: 10px;
+}
+
+.sidebar .pro-title {
+	font-size: 10px;
+	padding-right: 20px;
+	height: 16px;
+}
+
+.sidebar .pro-title li {
+	float: right;
+	margin-right: 0px;
+	padding-top: 5px;
+}
+
+.sidebar .nav {
+	margin-top: 10px;
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+.sidebar .nav li {
+	text-align: right;
+	padding-top: 3px;
+}
+
+.sidebar .nav a {
+	text-decoration: none;
+	color: #474747;
+}
+
+.sidebar .nav a:hover {
+	color: #008BD0;
+}
+
+.sidebar .pro-info {
+	margin-top: 5px;
+}
+
+.accordion {
+	margin-top: 16px;
+	text-align: right;
+}
+
+.accordion dt {
+	font-size: 12px;
+}
+
+
+.accordion dt, dd {
+	padding-right: 10px;
+}
+
+.accordion dt.firstchild {
+	border-top: 1px dashed #A7A7A7;
+	border-bottom: 1px dashed #008BD0;
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
+
+.accordion dt.secondchild {
+	padding-top: 5px;
+	border-bottom: 1px dashed #008BD0;
+	padding-bottom: 5px;
+}
+
+.accordion span:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.accordion dt span:hover {
+	color: #008BD0;
+}
+
+.accordion dd {
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #A7A7A7;
+}
+
+.accordion dd p {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: list-item;
+	list-style-type: none;
+	text-align: center;
+}
+
+.accordion dd p a {
+	text-decoration: none;
+	color: #01608F;
+}
+
+.accordion dd p a:hover {
+	color: #008BD0;
+}
+
+.accordion span {
+	display: block;
+	color: black;
+}
+
+.sidebar .sidebar-portfolio-work{
+	text-align:right;
+	font-size:12px;
+	margin-top:16px;
+}
+
+.sidebar .sidebar-portfolio-work dt.firstchild{
+	border-top:1px dashed black;
+	padding-top:7px;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+.sidebar .sidebar-portfolio-work dt.secondchild{
+	border-bottom:1px dashed black;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+.sidebar .sidebar-portfolio-work dt.firstchild:hover{
+	cursor:hand;
+	cursor:pointer;
+	color:#008BD0;
+}
+
+.sidebar .sidebar-portfolio-work dt.secondchild:hover{
+	cursor:hand;
+	cursor:pointer;
+	color:#008BD0;
+}
+
+
+.sidebar .sidebar-portfolio-work .design-links{
+	padding-top:16px;
+}
+
+.sidebar .sidebar-portfolio-work .web-links{
+	padding-top:16px;
+}
+
+.sidebar .sidebar-portfolio-work a{
+	text-decoration:none;
+}
+
+/* Main */
+
+.main-content {
+	width: 500px;
+	float: right;
+	margin-top: 152px;
+	margin-right: 40px;
+}
+
+.main-content h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #008BD0;
+}
+
+.main-content h2 {
+	margin-top: 4px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	border-top: 1px dashed #A7A7A7;
+	border-bottom: 1px dashed #A7A7A7;
+	font-size: 12px;
+	color: #626262;
+}
+.main-content p {
+	font-size: 14px;
+	line-height: 1.2;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: #626262;
+	padding-top: 8px;
+}
+
+.main-content p em {
+	font-style: italic;
+}
