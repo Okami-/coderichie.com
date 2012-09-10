@@ -6,6 +6,9 @@ $(document).ready(function() {
 	$('.design-links').hide();
 	$('.web-links').hide();
 	$('.Contact').hide();
+	$('.contact-info').hide();
+	$('.gallery img').hide();
+	
 	(function($) {
 	
 	var allPanels = $('.accordion > dd').hide();
@@ -37,6 +40,9 @@ $(document).ready(function() {
 		$('.main-content').hide();
 		$('.accordion2').show();
 		$('.Contact').hide();
+		$('.contact-info').hide()
+		$('.web-links').hide();
+		$('.design-links').hide();
 	})
 	
 	$("#home-link").click(function() {
@@ -46,6 +52,7 @@ $(document).ready(function() {
 		$('.design-links').hide();
 		$('.main-content').show();
 		$('.Contact').hide();
+		$('.contact-info').hide()
 	})
 	
 	$(".accordion2 > dt.firstchild").click(function(){
@@ -63,6 +70,46 @@ $(document).ready(function() {
 		$(".Contact").show();
 		$('.accordion').hide();
 		$('.accordion2').hide();
+		$('.contact-info').show();
 	})
 	
+	$('a').click(function(){
+		$('.gallery img').hide();
+	})
+	
+	$('dt').click(function(){
+		$('.gallery img').hide();
+	})
+	
+	$('.design-links .helvetica-link').click(function(){
+			$('.gallery .helvetica img').show("fast");
+	})
+	
+	$('.design-links .alarm-clock-link').click(function(){
+		$('.gallery .alarm_clock img').show("fast");
+	})
+	
+	$('.design-links .compass-link').click(function(){
+		$('.gallery .compass img').show("fast");
+	})
+	
+	$('.design-links .hour-glass-link').click(function(){
+		$('.gallery .hour_glass img').show("fast");
+	})
+	
+	$('.design-links .power-gym-link').click(function(){
+		$('.gallery .power_gym img').show("fast");
+	})
+	
+	$('.web-links .turntable-link').click(function(){
+		$('.gallery .turntablebot img').show("fast");
+	})
+	
+	$('.web-links .gestalt-link').click(function(){
+		$('.gallery .gestalt img').show("fast");
+	})
+	
+	$('.web-links .homme-link').click(function(){
+		$('.gallery .hommecooked img').show("fast");
+	})
 });
