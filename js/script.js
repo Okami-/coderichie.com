@@ -5,10 +5,10 @@ $(document).ready(function() {
 	$(".accordion2").hide();
 	$('.design-links').hide();
 	$('.web-links').hide();
+	$('.Contact').hide();
 	(function($) {
 	
 	var allPanels = $('.accordion > dd').hide();
-	
 	
 	$('.accordion > dt > span').click(function() {
 			$this = $(this);
@@ -34,7 +34,9 @@ $(document).ready(function() {
 	
 	$("#portfolio-link").click(function(event) {
 		$('.accordion').hide();
+		$('.main-content').hide();
 		$('.accordion2').show();
+		$('.Contact').hide();
 	})
 	
 	$("#home-link").click(function() {
@@ -42,6 +44,8 @@ $(document).ready(function() {
 		$('.accordion2').hide();
 		$('.web-links').hide();
 		$('.design-links').hide();
+		$('.main-content').show();
+		$('.Contact').hide();
 	})
 	
 	$(".accordion2 > dt.firstchild").click(function(){
@@ -52,6 +56,13 @@ $(document).ready(function() {
 	$(".accordion2 > dt.secondchild").click(function(){
 		$('.web-links').show();
 		$('.design-links').hide();
+	})
+	
+	$("#contact-link").click(function(){
+		$(".main-content").hide();
+		$(".Contact").show();
+		$('.accordion').hide();
+		$('.accordion2').hide();
 	})
 	
 });
