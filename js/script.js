@@ -101,15 +101,15 @@ $(document).ready(function() {
 		$('.gallery .power_gym img').show("fast");
 	})
 	
+	$('.web-links .twitter-rep-link').click(function(){
+		$('.gallery .twitter-rep img').show("fast");
+	})
+	
 	$('.web-links .turntable-link').click(function(){
 		$('.gallery .turntablebot img').show("fast");
 	})
 	
 	$('.web-links .gestalt-link').click(function(){
 		$('.gallery .gestalt img').show("fast");
-	})
-	
-	$('.web-links .homme-link').click(function(){
-		$('.gallery .hommecooked img').show("fast");
 	})
 });
